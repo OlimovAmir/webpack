@@ -1,8 +1,9 @@
 
 .main-content_right {
+    display: block;
     padding: 0px;
     margin: 0px;
-    
+
     justify-content: center;
     background-color:rgb(238, 238, 241);
 }
@@ -14,7 +15,7 @@
 .header__item1{
     display: flex;
     padding: 2%;
-    
+
 }
 .header__item2{
     display: flex;
@@ -36,13 +37,13 @@
     padding: 0%;
     margin: 0px;
     width: 81%;
-    
-    
+
+
 }
 
 h1 {
     font-size: 25px;
-    
+
 }
 
 .header__block2{
@@ -51,7 +52,7 @@ h1 {
     justify-content: space-around;
     align-items: center;
     width: auto;
-} 
+}
 
 
 .header__button9 {
@@ -67,21 +68,21 @@ h1 {
 .header__button10 {
     display: flex;
     cursor: pointer;
-    
+
 }
 
 .header__button10 img {
     padding: 2%;
 }
- 
+
 
 .main {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    
+
     overflow-x: scroll;
-     
+
 }
 
 .main::-webkit-scrollbar{
@@ -90,7 +91,7 @@ h1 {
 
 .main:hover::-webkit-scrollbar{
     background-color: rgba(160, 155, 155, 0.849);
-    
+
 }
 .main:hover{
     cursor: pointer;
@@ -105,20 +106,20 @@ h1 {
 
 .button {
    padding: 0.5%;
-   background-color: none;
+   background-color: transparent;
    margin: 0px 0.5%;
    border-radius: 7px;
    border: 2px solid;
    border-color: transparent;
 
-      
+
 }
 
 .main__button1{
     background-color: white;
     border: 2px solid;
     border-color: rgba(69, 241, 233, 0.925);
-    
+
 }
 .button:hover {
     border: 2px solid rgb(27, 13, 221);
@@ -141,13 +142,13 @@ h1 {
 .block_banner {
     position: relative;
     top: 15%;
-    
+
     background-repeat: no-repeat;
     background-size: contain;
     height: 100%;
-    
+
     z-index: 2;
-    
+
 }
 
 
@@ -162,7 +163,7 @@ h3 {
     font-family: 'TT Lakes2';
     margin-right: 2%;
     font-size: 16px;
-    
+
 
 }
 
@@ -173,13 +174,13 @@ section img {
 
 .main__button6 {
     vertical-align: 50%;
-    
+
 }
 
 @media screen and (min-width: 769px) { /* скрываем блок до заданной ширины*/
     .header__block1 {
         display: none;
-    }  
+    }
     }
 
 
@@ -187,12 +188,12 @@ section img {
    .header__button9  img {
        display: none;
    }
- 
+
    .header__button10  img {
     display: none;
 }
 .main{
-      
+
     font-size: 2.1vh;
 }
 .main__button1{
@@ -213,7 +214,7 @@ span {
 
 .main div:nth-child(1){
     order: 1;
-    
+
 }
 .main div:nth-child(1){
     order: 2;
@@ -234,18 +235,18 @@ span {
 @media screen and (max-width: 321px) {
      .header__item3 {
         display: none;
-    } 
+    }
     h1 {
         font-size: calc(20px + 3* (100vw/1120));
         padding-left: 8%;
     }
     h3 {
         display: none;
-    } 
+    }
     .feedback{
         flex-wrap: wrap;
-        justify-content: none;
-    } 
+        justify-content: center;
+    }
     .block_banner {
         position: relative;
         width: 320px;
@@ -254,13 +255,13 @@ span {
     .header__block1 {
         width: 320px;
         height: 88px;
-    } 
+    }
     .wrapper {
         padding: 0%;
         margin: 0px;
         width: 100%;
         height: 100%;
-       
+
     }
     .header__block1{
         height: 70%;
@@ -304,5 +305,5 @@ span {
     .post{
         padding-left: 5%;
     }
-    
+
     }
