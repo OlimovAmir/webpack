@@ -20,10 +20,7 @@ var swiper = new Swiper(".mySwiper", {
       el: ".swiper-pagination",
       clickable: true,
     },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+   
   });
 
 
@@ -31,6 +28,7 @@ var swiper = new Swiper(".mySwiper", {
 
 // init Swiper:
 var swiper2 = new Swiper('.slide_2', {
+  modules: [Navigation, Pagination],
   // configure Swiper to use modules
   slidesPerView: 1,
   spaceBetween: 10,
@@ -43,3 +41,14 @@ var swiper2 = new Swiper('.slide_2', {
 
 
 });
+
+
+window.addEventListener('resize', ()=>{
+ 
+  if (window.innerHeight < 800){
+    swiper2.disable()
+  } else{
+    swiper2.enable()
+  }
+
+})
