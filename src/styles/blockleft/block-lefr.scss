@@ -3,11 +3,11 @@
 .main-content_left {
     display: flex;
     height: 1024px;
-    
+
 }
 .main-content__block1 {
-    width: 320px;
-    
+    //width: 320px;
+
     overflow: hidden;
 }
 
@@ -43,9 +43,9 @@
     padding-left: 4%;
     font-family: 'TT Lakes2';
     transform: scale(1);
-    
-    
-    
+
+
+
 }
 
 .section:hover{
@@ -54,7 +54,7 @@
     padding-left: 20%;
     transform: scaleX(1.08);
     transition: 0.8s;
-    
+
 }
 
 .icon:hover{
@@ -66,12 +66,12 @@
 
 
  .main-content__icons {
-     
+
      display: flex;
      justify-content: flex-start;
      margin-top: 70%;
      padding-left: 4%;
-     
+
  }
 
  .main-content__icon2, .main-content__icon3{
@@ -94,18 +94,18 @@
     margin-top: 14%;
     font-family: 'TT Lakes2';
     padding-left: 4%;
-    
+
 }
 
 .language{
     margin: 0px 2% 0px 0px;
-   
+
 }
 
 .language:hover{
     cursor: pointer;
     color: rgb(123, 129, 129);
-} 
+}
 .language:active{
     color: red;
     font-size: x-large;
