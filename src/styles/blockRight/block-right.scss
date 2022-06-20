@@ -3,6 +3,7 @@
     display: block;
     padding: 0px;
     margin: 0px;
+    overflow: hidden;
 
     justify-content: center;
     background-color:rgb(238, 238, 241);
@@ -133,10 +134,13 @@ h1 {
     justify-content: space-around;
 }
 
+.feedback .post {
+    width: 50%;
+}
 .banner{
     position: relative;
 
-    width: 175%;
+    width: 50%;
 }
 
 .block_banner {
@@ -148,6 +152,11 @@ h1 {
     height: 100%;
 
     z-index: 2;
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
 
 }
 
@@ -204,6 +213,7 @@ section img {
 
 .post p{
     font-size: calc(8px + 8 * (100vw/1120));
+    width: 50%;
 }
 h3 {
     display: none;
@@ -249,11 +259,11 @@ span {
     }
     .block_banner {
         position: relative;
-        width: 320px;
+        //width: 320px;
         height: 230px;
     }
     .header__block1 {
-        width: 320px;
+        //width: 320px;
         height: 88px;
     }
     .wrapper {
