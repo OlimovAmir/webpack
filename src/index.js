@@ -11,55 +11,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-var swiper = new Swiper(".mySwiper", {
-  modules: [Navigation, Pagination],
-  slidesPerView: 1,
-  spaceBetween: 10,
-  freeMode: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-});
-
-
-//
-
-// init Swiper:
-var swiper2 = new Swiper('.slide_2', {
-  modules: [Navigation, Pagination],
-  // configure Swiper to use modules
-  slidesPerView: 1,
-  spaceBetween: 10,
-  freeMode: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-
-
-});
-
-var swiper3 = new Swiper('.slide_3', {
-  modules: [Navigation, Pagination],
-  // configure Swiper to use modules
-  slidesPerView: 1,
-  spaceBetween: 10,
-  freeMode: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-
-
-});
-
-
-window.addEventListener('DOMContentLoaded', () => {
-
+function onResize(){
   if (window.innerWidth > 800) {
 
     swiper2.disable() // отклюить 
@@ -120,6 +72,61 @@ window.addEventListener('DOMContentLoaded', () => {
     
 
   }
+} 
+
+
+
+var swiper = new Swiper(".mySwiper", {
+  modules: [Navigation, Pagination],
+  slidesPerView: 1,
+  spaceBetween: 10,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+});
+
+
+//
+
+// init Swiper:
+var swiper2 = new Swiper('.slide_2', {
+  modules: [Navigation, Pagination],
+  // configure Swiper to use modules
+  slidesPerView: 1,
+  spaceBetween: 10,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+
+
+});
+
+var swiper3 = new Swiper('.slide_3', {
+  modules: [Navigation, Pagination],
+  // configure Swiper to use modules
+  slidesPerView: 1,
+  spaceBetween: 10,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+
+
+});
+
+//DOMContentLoaded
+window.addEventListener('resize', () => {
+
+  onResize();
 
 })
 
+onResize();
